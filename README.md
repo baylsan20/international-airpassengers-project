@@ -1,39 +1,37 @@
-# international-airpassengers-project
+international-airpassengers-project
 
-Submitted by: <your name> — academy: @SDAIAAcademy
+Submitted by: Baylsan Hassan Almehdawi — academy: @SDAIAAcademy
 
-Capstone for the SDAIA Time Series course: the full pipeline — exploration,
-decomposition, benchmark floor, model through the framework (AutoGluon),
-cross-validation, report — on the Box & Jenkins AirPassengers series
-(1949-1960).
+Capstone project for the SDAIA Time Series course, using the Box & Jenkins AirPassengers dataset (1949–1960).
 
-This repo is a **starter**, not a requirement. If you already know the
-pipeline, you may run it on your own series, or with a different framework
-or method — see "Your own data or method" in `brief.md`.
+Project Overview
 
-## Start
+This project explores monthly airline passenger data, identifies trend and seasonality, evaluates a Seasonal Naive baseline, and compares forecasting models using time-series cross-validation.
 
-1. Fork this repo.
-2. Open `project.ipynb` in Colab and run cell 1 — it installs everything
-   (the project's `coursekit`; AutoGluon is installed later, in the
-   notebook, when section 3 is reached).
-3. Read `brief.md`, do the work in the notebook, write the report as
-   `report.md`, **commit** and **push** to your fork, and submit the fork's
-   URL.
+Methods and Tools
 
-## Submission
+* Python
+* Pandas and NumPy
+* STL decomposition
+* Autocorrelation (ACF)
+* AutoGluon TimeSeries
+* StatsForecast
+* Forecast evaluation: MASE, RMSSE, CRPS, and 80% prediction interval coverage
 
-**Fork → solve → commit → push** — the notebook and the report must live
-on GitHub, not just in a runtime.
+Results
 
-At the top of your fork's `README.md`, replace `<your name>` in the line
+AutoARIMA performed better than the Seasonal Naive baseline on the cross-validation results, with lower MASE, RMSSE, and CRPS. Prediction interval coverage remained below the target 80%, indicating that interval calibration may need improvement.
 
-    Submitted by: <your name> — academy: @SDAIAAcademy
+Dataset
 
-with your name, so the submission is credited to you and tags the academy
-account.
+Monthly international airline passenger totals from 1949 to 1960.
 
-Deadline: **10:00 AM (Riyadh time), Thursday 15 October 2026**.
+Files
+
+* project.ipynb — analysis, forecasting, and evaluation
+* report.md — project findings and recommendations
+* brief.md — project instructions
+* rubric.md — evaluation criteria
 
 ## Files
 
